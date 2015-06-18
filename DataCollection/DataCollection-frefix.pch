@@ -1,0 +1,31 @@
+//
+//  DataCollection-frefix.pch
+//  DataCollection
+//
+//  Created by ChuanKai on 15/3/16.
+//  Copyright (c) 2015年 ChuanKai. All rights reserved.
+//
+
+#import "UIManage.h"
+#import "HTTPTool.h"
+#import "AccountManager.h"
+#import "CKCKProgress.h"
+
+#ifndef DataCollection_DataCollection_frefix_pch
+#define DataCollection_DataCollection_frefix_pch
+
+#define kColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define ScreenHeight [[UIScreen mainScreen]bounds].size.height
+#define ScreenWidth  [[UIScreen mainScreen]bounds].size.width
+
+#define AccountFile(fileName) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:(fileName)]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#define SERVER_HOST_URL @"http://192.168.253.1:8088/ashx/"
+#define SERVER_HOST_URL @"http://qxw1151990111.my3w.com/ashx/"
+
+#define LOGINED_STRING @"loginedAccount.data" //登陆后保存的文件
+
+#endif
